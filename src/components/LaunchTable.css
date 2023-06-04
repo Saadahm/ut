@@ -1,0 +1,29 @@
+.FirstBut {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .launch-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .launch-table th,
+  .launch-table td {
+    border: 1px solid #000000; 
+    padding: 8px;
+  }
+  
+  .launch-table th {
+    background-color: lightgreen;
+    font-weight: bold;
+  }
+  
+  .launch-table tbody tr:nth-child(even) {
+    background-color: lightcyan;
+  }
+  
+  .launch-table tbody tr:hover {
+    background-color: lightyellow;
+  }

@@ -1,3 +1,21 @@
+
+
+Brief overview of the implementation details and design decisions:
+My project has 2 routes. One is the landing page and another one is the analytics page. I have used redux for state management and react tables.
+Landing Page: On the landing page we have a table of 7 coloumns: Flight-Number, Rocket-Name, Launch-Date, Mission-Name, Success, Launch-Site and Article-Link. There is a search button : Search any mission name. In my code, I have made a searchfunc for that. There is a sort button on all the coloumns which sorts in ascending and descending order alternatively. In my code, sortIt function handles the sorting of coloumns, and changes it accordingly. At the end of the landing page, we have a list of page numbers, the table is paginated and we have the pagination component for that. Also, there is a paginate function. The actions folder contains analyticsActions.js and launchActions.js. There is a constants folder which has 2 files namely, actionTypes.js and analyticsActionTypes.js. The reducers folder contains, analyticsReducer.js, launchReducer.js and index.js. We have a store called store.js. The use of redux makes state management easy.
+Analytics Page: The analytics page shows 2 plots, one is the rocket’s wise success/failure rate and another is the success/failure rate yearwise and compares one rocket with the other rockets.
+
+
+Some installations required:
+1) npm install react-router-dom
+2) npm i axios
+3) npm add react-chartjs-2 chart.js
+4) npm install chart.js
+5) npm install redux react-redux
+6) npm install redux
+7) npm npm install @reduxjs/toolkit
+8) npm install react-chartjs-2@latest
+9) npm start : to run the react app 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
